@@ -40,7 +40,7 @@ def generate_audio():
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Speaker server configuration')
     parser.add_argument('--port', type=int, default=5555, help='Port on which the speaker server runs')
-    parser.add_argument('--file_location', type=str, default='/mnt/d/', help='Where the server generates output file')
+    parser.add_argument('--file_location', type=str, default='/mnt/c/kiosk/', help='Where the server generates output file')
 
     args = parser.parse_args()
 
