@@ -84,7 +84,7 @@ def generate_tts_file(text, text_hash):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Speaker server configuration')
     parser.add_argument('--port', type=int, default=5002, help='Port on which the speaker server runs')
-    parser.add_argument('--speaker', type=str, default='http://localhost:5001/play-audio', help='Speaker server address')
+    parser.add_argument('--speaker', type=str, default='http://localhost:9333/play', help='Speaker server address')
 
     args = parser.parse_args()
 
