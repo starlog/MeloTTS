@@ -14,7 +14,7 @@ app = Flask(__name__)
 
 # Initialize the TTS model
 speed = 1.3
-device = 'cuda' # or cuda:0
+device = 'cuda:0' # or cuda:0
 temp_dir = '/tmp'
 
 # Cache dictionary to store text -> filename mapping
