@@ -9,12 +9,13 @@ import argparse
 import io
 import uuid
 import hashlib
+import torch
 
 app = Flask(__name__)
 
 # Initialize the TTS model
 speed = 1.3
-device = 'cuda:0' # or cuda:0
+device = 'cuda' if torch.cuda.is_available() else 'cpu'
 temp_dir = '/tmp'
 
 # Cache dictionary to store text -> filename mapping
